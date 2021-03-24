@@ -6,26 +6,21 @@
 </head>
 
 <body>
-    <section class="echequier">
-        <h1>Tic Tac Toe</h1>
-            <table >
-                <tr>
-                    <td class= "cellule " id = "0">  </td>
-                    <td class= "cellule " id = "1">  </td>
-                    <td class= "cellule " id = "2"> </td>
-                </tr>
-                <tr>
-                    <td class= "cellule " id = "3"> </td>
-                    <td class= "cellule " id = "4"> </td>
-                    <td class= "cellule " id = "5"> </td>
-                </tr>
-                <tr>
-                    <td class= "cellule " id = "6"> </td>
-                    <td class= "cellule " id = "7"> </td>
-                    <td class= "cellule " id = "8"> </td>
-                </tr>
-            </table>
+    <section >
+        <h1 class = "titre">Tic Tac Toe</h1>
+        <div class="jeux ">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+          </div>
         <h2 class = "status"></h2>
+        <h2 class = "score "></h2>
         <button class="restart"> restart </button>
     </section>
     <script src="script.js"></script>
