@@ -3,7 +3,11 @@ const statusDisplay = document.querySelector('.status');
 let currentPlayer = 'X';
 let gameState = ['', '', '', '', '', '', '', '', ''];
 let gameActive = true;
-
+let score =  {
+    egalite: 0 , 
+    JoeurX : 0 , 
+    JoeurY : 0 , 
+}
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
@@ -50,6 +54,7 @@ function handleResultValidation() {
   if (roundWon) {
     statusDisplay.innerHTML = winningMessage();
     gameActive = false;
+    s-
     return;
   }
 
@@ -92,9 +97,5 @@ document
   .querySelector('.restart')
   .addEventListener('click', handleRestartGame);
 
-let score =  {
-    egalite: 0 , 
-    JoeurX : 0 , 
-    JoeurY : 0 , 
-}
+
 
